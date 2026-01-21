@@ -1,3 +1,9 @@
 .tieude {
-  color: blue;
+  color: tomato;
+  font-weight: bold;
+}
+
+.noidung{
+  color: white;
+  font-style: normol;
 }
