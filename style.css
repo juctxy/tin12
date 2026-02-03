@@ -13,7 +13,7 @@
 
 .tieude1 {
   text-align: center;
-  font-size: 55px;
+  font-size:30px;
   font-weight: bold;
   color: red;
 }
@@ -21,11 +21,11 @@
 .noidung1 {
   color: black;
   font-style: normal;
-  font-size:22px;
+  font-size:18px;
 }
 
 .image {
-  width:220px; 
+  width:150px; 
   height:auto;
   text-align: center;
 }
