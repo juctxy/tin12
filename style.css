@@ -5,25 +5,25 @@
 }
 .header {
   flex: 15%;
-  background-color: #000000;
+  background-color: #84A5B5;
 }
 
 .menu {
   flex: 5%;
-  background-color: #111111;
+  background-color: #9AB584;
 }
 .menu a {
   padding: 15px 20px;
-  color: #444444;
+  color: #341C54;
 }
 .menu hover {
-  blackground-color: #555555;
-  color: #666666;
+  blackground-color: #E35BBC;
+  color: #5B9AE3;
 }
 
 .content {
   flex: 70%;
-  background-color: #222222;
+  background-color: #FFFFFF;
 }
 
 .content iframe {
@@ -34,7 +34,7 @@
 }
 .footer {
   flex: 10%;
-  bacground-color: #333333;
+  bacground-color: #AAAAAA;
 }
 
 
