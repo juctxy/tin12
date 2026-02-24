@@ -12,6 +12,14 @@
   flex: 5%;
   background-color: #111111;
 }
+.menu a {
+  padding: 15px 20px;
+  color: #444444;
+}
+.menu hover {
+  blackground-color: #555555;
+  color: #666666;
+}
 
 .content {
   flex: 70%;
