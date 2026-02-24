@@ -1,3 +1,29 @@
+.container {
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.header {
+  flex: 15%;
+  background-color: #000000;
+}
+
+.menu {
+  flex: 5%;
+  background-color: #111111;
+}
+
+.content {
+  flex: 70%;
+  background-color: #222222;
+}
+
+.footer {
+  flex: 10%;
+  bacground-color: #333333;
+}
+
+
 .tieude {
   color: tomato;
   font-weight: bold;
