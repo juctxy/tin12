@@ -11,6 +11,8 @@
 .menu {
   flex: 5%;
   background-color: #9AB584;
+  color: white;
+  display: flex;
 }
 .menu a {
   padding: 15px 20px;
