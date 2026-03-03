@@ -21,7 +21,7 @@
   color: #341C54;
 }
 .menu a:hover {
-  blackground-color: #E35BBC;
+  background-color: #E35BBC;
   color: #5B9AE3;
 }
 
@@ -38,7 +38,7 @@
 }
 .footer {
   flex: 10%;
-  bacground-color: #AAAAAA;
+  background-color: #AAAAAA;
 }
 
 
