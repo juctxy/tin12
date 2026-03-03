@@ -6,6 +6,8 @@
 .header {
   flex: 15%;
   background-color: #84A5B5;
+  background: url("images/Nudaeng.jpg) center/ 100%;
+  aspect-ratio: 6/1;
 }
 
 .menu {
