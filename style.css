@@ -20,7 +20,7 @@
   padding: 15px 20px;
   color: #341C54;
 }
-.menu hover {
+.menu a:hover {
   blackground-color: #E35BBC;
   color: #5B9AE3;
 }
