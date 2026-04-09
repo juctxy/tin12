@@ -6,17 +6,37 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-  <body>
-      <script>
-          let pp = new URLSearchParams(window.location.search);
-          let ten = params.get("ten");
+<body>
+    <div id="kq"></div>
 
-          let yk = params.get("txtYk");
-          document.getElementById("kq").innerHTML ="Cảm ơn bạn" + name + "đã góp ý" + "<br><br> Chúng tôi  xin ghi nhận ý kiến của bạn như sau:<br>" + yk;
-      </script>
-    CẢM ƠN BẠN ĐÃ GÓP Ý
-    chúng tôi CÓ THỂ sẽ ghi nhận ý kiến của bạn
-  <form action="youropinion.html">
-    <input type="submit" name="cmd" value="Quay lại">
-</form>
-  </body>
+    <form action="youropinion.html">
+        <input type="submit" name="cmd" value="Quay lại">
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let params = new URLSearchParams(window.location.search);
+            let ten = params.get("hoten");
+            let yk = params.get("ykien");
+            let theloaiList = params.getAll("theloai");
+            let theloai = theloaiList.join(", ");
+
+            if (ten) {
+                let html = "Cảm ơn bạn " + ten + " đã góp ý!";
+
+                if (yk) {
+                    html += "<br><br>Chúng tôi xin ghi nhận ý kiến của bạn như sau:<br>" + yk;
+                }
+
+                if (theloai) {
+                    html += "<br><br>Thể loại sách cần bổ sung: " + theloai;
+                }
+
+                document.getElementById("kq").innerHTML = html;
+            } else {
+                document.getElementById("kq").innerHTML = "Cảm ơn bạn đã góp ý!";
+            }
+        });
+    </script>
+</body>
+</html>
