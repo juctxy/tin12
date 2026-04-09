@@ -3,12 +3,22 @@
     <meta charset="UTF-8">
     <title>Hội thao</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        body { padding: 30px 40px; }
+        fieldset { border: 1.5px solid #ccc; border-radius: 8px; padding: 12px 20px; margin: 16px 0; }
+        legend { font-weight: 600; color: #341C54; padding: 0 6px; }
+        .radio-group label, .check-group label {
+            display: inline-flex; align-items: center; gap: 6px;
+            margin-right: 20px; cursor: pointer;
+        }
+        .btn-row { display: flex; gap: 10px; margin-top: 20px; }
+    </style>
 </head>
 <body>
 
-    <form action="thankyou1.html">
+    <form action="thankyou1.html" method="get">
         
-        <h2><b>Đăng kí tham gia Hội Thao</b></h2>
+        <h2><b>Đăng ký tham gia Hội Thao</b></h2>
         
         <ol>
             <li>
@@ -20,23 +30,31 @@
                     <input type="email" name="email" required>
                 </label><br><br>
             </li>
+        </ol>
 
-        <input type="radio" name="grade" > Lớp 10 
-        <input type="radio" name="grade" > Lớp 11
-        <input type="radio" name="grade"> Lớp 12
 
-        <h3>Tham dự môn</h3>
-        <input type="checkbox" name="theloai" value="bb"> Bóng bàn <br>
-        <input type="checkbox" name="theloai" value="cl"> Cầu lông <br>
-        <input type="checkbox" name="theloai" value="cv"> Cờ vua <br>
-       <br><br>
+            <h3>Khối lớp</h3>
+            <div class="radio-group">
+                <label><input type="radio" name="grade" value="10"> Lớp 10</label>
+                <label><input type="radio" name="grade" value="11"> Lớp 11</label>
+                <label><input type="radio" name="grade" value="12"> Lớp 12</label>
+            </div>
+
+            <h3>Tham dự môn</h3>
+            <div class="check-group">
+                <label><input type="checkbox" name="theloai" value="Bóng bàn"> Bóng bàn</label>
+                <label><input type="checkbox" name="theloai" value="Cầu lông"> Cầu lông</label>
+                <label><input type="checkbox" name="theloai" value="Cờ vua"> Cờ vua</label>
+            </div>
+
         
-        <input type="submit" name="cmd" value="Đăng ký">
+        <div class="btn-row">
+            <input type="submit" name="cmd" value="Đăng ký">
+            <input type="button" value="Hủy bỏ" onclick="window.location.href='hoithao.html'"
+                style="padding:9px 28px;border:none;border-radius:6px;background:#aaa;color:#fff;font-size:14px;font-weight:600;cursor:pointer;">
+        </div>
         
     </form>
-    <form action="hoithao.html">
-        <input type="submit" name="cmd" value="Hủy bỏ">
-    </form>
+
 </body>
 </html>
-
