@@ -6,9 +6,30 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-  <body>
-    Cảm ơn bạn đã đăng ký hội thao!!!!!!
-  <form action="hoithao.html">
-    <input type="submit" name="cmd" value="Quay lại">
-</form>
-  </body>
+<body>
+
+    <form action="hoithao.html">
+        <input type="submit" name="cmd" value="Quay lại">
+    </form>
+
+    <div id="kq"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let params = new URLSearchParams(window.location.search);
+            let ten = params.get("hoten");
+            let lop = params.get("grade");
+            let theloaiList = params.getAll("theloai");
+            let theloai = theloaiList.join(", ");
+
+            if (ten && lop && theloai) {
+                document.getElementById("kq").innerHTML =
+                    "Cảm ơn " + ten + " lớp " + lop + " đã đăng ký hội thao môn " + theloai + "!!!!!!";
+            } else {
+                document.getElementById("kq").innerHTML =
+                    "Cảm ơn bạn đã đăng ký hội thao!!!!!!";
+            }
+        });
+    </script>
+</body>
+</html>
